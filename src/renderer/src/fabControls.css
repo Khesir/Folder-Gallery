@@ -1,0 +1,25 @@
+.fab-controls {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.fab-toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background-color: var(--amber);
+  color: #1a1410;
+  border: 1px solid var(--amber);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}

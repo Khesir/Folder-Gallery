@@ -1,0 +1,10 @@
+.folder-tabs-bar {
+  display: flex;
+  align-items: flex-end;
+  height: 38px;
+  padding: 0.35rem 0.75rem 0;
+  background-color: var(--panel-2);
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+  min-width: 0;
+}

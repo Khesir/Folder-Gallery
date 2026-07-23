@@ -1,0 +1,76 @@
+.folder-metadata-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1400;
+}
+
+.folder-metadata-dialog {
+  position: relative;
+  background-color: var(--panel);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  padding: 1.5rem;
+  min-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.folder-metadata-dialog h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.folder-metadata-dialog-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--ink-3);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.folder-metadata-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--ink-3);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.folder-metadata-description {
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: var(--ink);
+  background-color: var(--panel-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.7rem;
+  resize: vertical;
+  min-height: 5rem;
+}
+
+.folder-metadata-dialog input[type='text'] {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--ink);
+  background-color: var(--panel-2);
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.7rem;
+}
+
+.folder-metadata-dialog .btn-gold {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}

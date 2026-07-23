@@ -1,0 +1,117 @@
+.folder-tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2rem;
+  height: 100%;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -webkit-app-region: no-drag;
+}
+
+.folder-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.folder-tab-group {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.folder-tab {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 12rem;
+  min-width: 6.5rem;
+  height: calc(100% - 6px);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  padding: 0 0.5rem 0 0.8rem;
+  cursor: pointer;
+}
+
+.folder-tab:hover {
+  background-color: var(--panel-2);
+  color: var(--ink);
+}
+
+.folder-tab-active,
+.folder-tab-active:hover {
+  background-color: var(--panel);
+  color: var(--ink);
+}
+
+.folder-tab-active::after {
+  content: '';
+  position: absolute;
+  left: 0.5rem;
+  right: 0.5rem;
+  bottom: 0;
+  height: 2px;
+  border-radius: 999px;
+  background-color: var(--amber);
+}
+
+.folder-tab-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.folder-tab-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.folder-tab:hover .folder-tab-close,
+.folder-tab-active .folder-tab-close {
+  opacity: 0.6;
+}
+
+.folder-tab-close:hover {
+  opacity: 1;
+  background-color: var(--amber);
+  color: #1a1410;
+}
+
+.folder-tab-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0 0 0.3rem 0.4rem;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  color: var(--ink-3);
+  background-color: var(--panel-2);
+  border: 1px solid var(--line-2);
+  cursor: pointer;
+}
+
+.folder-tab-add:hover {
+  border-color: var(--amber);
+  color: var(--amber);
+}

@@ -1,0 +1,56 @@
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 32px;
+  background-color: var(--bg);
+  border-bottom: 1px solid var(--line);
+  -webkit-app-region: drag;
+}
+
+.title-bar-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+  padding-left: 0.75rem;
+}
+
+.title-bar-icon {
+  flex-shrink: 0;
+}
+
+.title-bar-controls {
+  display: flex;
+  height: 100%;
+  -webkit-app-region: no-drag;
+}
+
+.title-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 100%;
+  border: none;
+  background: none;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+.title-bar-button:hover {
+  background-color: var(--panel-2);
+}
+
+.title-bar-button-close:hover {
+  background-color: #e81123;
+  color: #ffffff;
+}
+
+.title-bar-theme-button {
+  width: 40px;
+  border-right: 1px solid var(--line);
+}

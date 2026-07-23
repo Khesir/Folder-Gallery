@@ -1,0 +1,29 @@
+.btn-gold,
+.btn-line {
+  font-family: var(--mono);
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.btn-gold {
+  background: var(--amber);
+  color: #1a1410;
+  border: 1px solid var(--amber);
+}
+
+.btn-line {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line-2);
+}
+
+.btn-gold:disabled,
+.btn-line:disabled {
+  opacity: 0.5;
+  cursor: default;
+}

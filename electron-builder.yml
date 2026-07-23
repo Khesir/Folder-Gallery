@@ -1,0 +1,21 @@
+appId: com.foldergallery.app
+productName: Folder Gallery
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.mjs'
+  - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+win:
+  executableName: folder-gallery
+  target:
+    - target: nsis
+      arch:
+        - x64
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  createDesktopShortcut: always

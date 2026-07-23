@@ -1,0 +1,31 @@
+{
+  "name": "folder-gallery",
+  "version": "0.1.0",
+  "description": "Folder Gallery",
+  "main": "./out/main/index.js",
+  "author": "",
+  "private": true,
+  "scripts": {
+    "dev": "electron-vite dev",
+    "test": "vitest run",
+    "build": "electron-vite build && electron-builder --win",
+    "build:unpack": "electron-vite build && electron-builder --dir"
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.9",
+    "react-masonry-css": "^1.0.16"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.0",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "electron-vite": "^2.3.0",
+    "jsdom": "^29.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11",
+    "vitest": "^4.1.10"
+  }
+}
